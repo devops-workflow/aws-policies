@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenyAMICreateDelete",
+            "Effect": "Deny",
+            "Action": [
+                "ec2:CreateFpgaImage",
+                "ec2:CreateImage",
+                "ec2:DeleteFpgaImage",
+                "ec2:DeregisterImage",
+                "ec2:RegisterImage"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
